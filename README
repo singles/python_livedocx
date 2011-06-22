@@ -1,0 +1,11 @@
+python_livedocx is wrapper for [LiveDocx](http://livedocx.com) service. It simplifies usage of theirs API.
+It's distributed on MIT license.
+Requirements: Python > 2.6.1, [SUDS](https://fedorahosted.org/suds/)
+
+CHANGELOG:
+
+===========================================
+ v. 0.1
+===========================================
+
+1. Initial release
