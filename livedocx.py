@@ -2,7 +2,7 @@ from suds import WebFault
 from suds.client import Client
 import os
 
-class LiveDocx():
+class LiveDocx(object):
 
     API_URL = 'https://api.livedocx.com/1.2/mailmerge.asmx?wsdl'
     ALLOWED_TEMPLATE_EXT = ['DOC', 'DOCX', 'RTF', 'TXD']

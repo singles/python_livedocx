@@ -1,8 +1,8 @@
-python_livedocx is wrapper for [LiveDocx](http://livedocx.com) service. It simplifies usage of theirs API.
-It's distributed on MIT license.
-Requirements: Python > 2.6.1, [SUDS](https://fedorahosted.org/suds/)
+python_livedocx is wrapper for [LiveDocx](http://livedocx.com) service. It simplifies usage of theirs API.  
+It's distributed on MIT license.  
+Requirements: Python > 2.6.1, [SUDS](https://fedorahosted.org/suds/)  
 
-USAGE (download sample template from here http://www.phplivedocx.org/articles/brief-introduction-to-phplivedocx/):
+USAGE (download sample template from here http://www.phplivedocx.org/articles/brief-introduction-to-phplivedocx/ ):
 
     from livedocx import LiveDocx
 
