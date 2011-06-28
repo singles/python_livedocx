@@ -20,11 +20,3 @@ USAGE (download sample template from here http://www.phplivedocx.org/articles/br
     file = open('software info.pdf', 'wb')
     file.write(data)
     file.close()
-
-CHANGELOG:
-
-===========================================
- v. 0.1
-===========================================
-
-1. Initial release

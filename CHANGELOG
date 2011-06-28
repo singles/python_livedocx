@@ -1,0 +1,13 @@
+CHANGELOG:
+
+================
+v. 0.1.1       |
+================
+
+1. Added assign method, which assigns value or block depending on value types.
+
+================
+v. 0.1         |
+================
+
+1. Initial release

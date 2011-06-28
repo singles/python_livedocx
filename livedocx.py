@@ -31,6 +31,32 @@ class LiveDocx(object):
         """
         self.block_field_values[key] = values
 
+    def assign(self, data):
+        """
+        Assign data, and automatically add as and value or block. Ex
+        
+        Arguments:
+        data = dictionary containing data
+        
+        Ex: 
+        ld_object.assign({
+            'name': 'John'
+            'age': 123
+            'data': [
+                dict(field='foo'),
+                dict(field='bar)
+            ]
+        })
+        """
+        if type(data) != dict:
+            raise ValueError('Passed data must be a dictionary')
+            
+        for key, value in data.iteritems():
+            if type(value) == list:
+                self.assign_block(key, value)
+            else:
+                self.assign_value(key, value)
+
     def create_document(self):
         """
         Creates document with assigned variables, clear them and preparing document to retrieve.
