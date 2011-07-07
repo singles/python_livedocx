@@ -121,7 +121,7 @@ class LiveDocx(object):
         if pages == None:
             data = self.client.service.GetAllMetafiles()
         elif not None in pages:
-            data = self.client.service.GetMetafiles(ffromPage = pages[0], toPage = pages[1])
+            data = self.client.service.GetMetafiles(fromPage = pages[0], toPage = pages[1])
         else:
             raise LiveDocxError('Both values from_page and to_page must be set')
 
