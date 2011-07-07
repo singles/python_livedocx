@@ -106,7 +106,7 @@ class LiveDocx(object):
         if pages == None:
             bitmaps = self.client.service.GetAllBitmaps(zoomFactor=zoom, format=format)
         elif not None in pages:
-            bitmaps = self.client.service.GetBitmaps(fromPage = from_page, toPage = to_page, zoomFactor=zoom, format=format)
+            bitmaps = self.client.service.GetBitmaps(fromPage = pages[0], toPage = pages[1], zoomFactor=zoom, format=format)
         else:
             raise LiveDocxError('Both values from_page and to_page must be set')
 
@@ -121,7 +121,7 @@ class LiveDocx(object):
         if pages == None:
             data = self.client.service.GetAllMetafiles()
         elif not None in pages:
-            data = self.client.service.GetMetafiles(fromPage=from_page, toPage=to_page)
+            data = self.client.service.GetMetafiles(ffromPage = pages[0], toPage = pages[1])
         else:
             raise LiveDocxError('Both values from_page and to_page must be set')
 
