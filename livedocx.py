@@ -187,7 +187,7 @@ class LiveDocx(object):
         extension = self._get_ext(filename)
         self._validate_extension(extension.upper(), self.ALLOWED_TEMPLATE_EXT)
 
-        template = open(filename).read().encode('base64')
+        template = open(filename, 'rb').read().encode('base64')
 
         self.client.service.SetLocalTemplate(template=template, format=extension.upper())
 
